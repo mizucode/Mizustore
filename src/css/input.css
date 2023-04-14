@@ -20,22 +20,41 @@ body {
 
 @layer components {
 	.card {
-		@apply bg-white text-gray-700 w-64 min-h-[10rem] shadow-lg rounded-md overflow-hidden;
+		@apply bg-white text-gray-700 w-32 min-h-[2rem] shadow-lg rounded-md overflow-hidden;
 	}
 	.badge {
-		@apply px-3 py-1 rounded-full text-xs bg-gray-100;
+		@apply px-1.5 py-0.5 rounded-full text-[0.3rem] bg-gray-100;
 	}
 	.product-title {
-		@apply font-semibold
+		@apply font-semibold text-[0.7rem]
 		overflow-ellipsis overflow-hidden whitespace-nowrap;
 	}
+	.product-price {
+		@apply text-[0.7rem] font-bold;
+	}
+	.product-discount {
+		@apply text-[0.5rem] line-through opacity-50;
+	}
 	.discount-percent {
-		@apply bg-green-500 px-1.5 py-0.5 rounded-md text-xs text-white;
+		@apply bg-green-500 px-1 py-0.5 rounded-md text-[0.3rem] text-white;
 	}
 	.button-primary {
-		@apply bg-biru/90 hover:bg-biru/80 px-6 py-2 rounded-md text-white font-medium tracking-wide transition;
+		@apply bg-biru/90 hover:bg-biru/80 px-3 py-0.5 text-[0.5rem] rounded-sm text-white font-medium tracking-wide transition;
 	}
 	.button-icon {
-		@apply flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md;
+		@apply flex-grow flex justify-center items-center text-[0.5rem] bg-gray-300/60 hover:bg-gray-300/80 transition rounded-sm;
+	}
+	.test {
+		@apply w-full flex-wrap flex justify-center gap-2 items-center p-3 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px];
+	}
+	.swiper {
+		width: 100%;
+		height: 100%;
+	}
+
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
