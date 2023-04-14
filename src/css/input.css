@@ -1,6 +1,6 @@
 @tailwind base;
 
-html {
+body {
 	background-color: #f7f7f7;
 	box-sizing: border-box;
 	margin: 0;
@@ -11,3 +11,31 @@ html {
 }
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-poppins;
+	}
+}
+
+@layer components {
+	.card {
+		@apply bg-white text-gray-700 w-64 min-h-[10rem] shadow-lg rounded-md overflow-hidden;
+	}
+	.badge {
+		@apply px-3 py-1 rounded-full text-xs bg-gray-100;
+	}
+	.product-title {
+		@apply font-semibold
+		overflow-ellipsis overflow-hidden whitespace-nowrap;
+	}
+	.discount-percent {
+		@apply bg-green-500 px-1.5 py-0.5 rounded-md text-xs text-white;
+	}
+	.button-primary {
+		@apply bg-biru/90 hover:bg-biru/80 px-6 py-2 rounded-md text-white font-medium tracking-wide transition;
+	}
+	.button-icon {
+		@apply flex-grow flex justify-center items-center bg-gray-300/60 hover:bg-gray-300/80 transition rounded-md;
+	}
+}
