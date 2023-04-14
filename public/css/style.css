@@ -518,6 +518,9 @@ video {
 
 html {
   background-color: #f7f7f7;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -1158,6 +1161,10 @@ html {
     height: auto;
   }
 
+  .lg\:w-\[13\%\] {
+    width: 13%;
+  }
+
   .lg\:w-\[30\%\] {
     width: 30%;
   }
@@ -1166,8 +1173,8 @@ html {
     width: 80%;
   }
 
-  .lg\:w-\[90\%\] {
-    width: 90%;
+  .lg\:w-\[8rem\] {
+    width: 8rem;
   }
 
   .lg\:grid-flow-col {
@@ -1182,17 +1189,16 @@ html {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
+  .lg\:justify-items-center {
+    justify-items: center;
+  }
+
   .lg\:gap-0 {
     gap: 0px;
   }
 
   .lg\:p-3 {
     padding: 0.75rem;
-  }
-
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .lg\:py-6 {
