@@ -21,41 +21,45 @@
 		<link href="./css/style.css" rel="stylesheet" />
 	</head>
 	<body class="font-poppins">
-		<nav class="z-50 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+		<nav class="z-50 bg-white shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
 			<div class="container">
-				<div class="flex items-center justify-between relative py-3">
+				<div class="flex items-center justify-between relative py-3 lg:py-6">
 					<div class="flex items-center">
-						<i class="fa-solid fa-bars text-abu"></i>
-						<a href="#" class="text-biru ml-1"
+						<i class="fa-solid fa-bars text-abu md:hidden"></i>
+						<a href="#" class="text-biru ml-1 lg:text-4xl lg:font-bold"
 							>Mizu<span class="text-kuning">shop</span></a
 						>
 					</div>
-					<div class="flex gap-5 text-biru text-base">
+					<div class="flex gap-5 text-biru text-base lg:text-2xl items-center">
 						<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
 						<a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
 						<a href="#"><i class="fa-solid fa-repeat"></i></a>
+						<div class="w-[1px] h-5 bg-abu lg:flex hidden"></div>
+						<a href="#" class="text-base hidden lg:flex">Sign In</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<section class="bg-biru max-w-full">
+		<section class="bg-kuning max-w-full -z-50">
 			<div class="container">
-				<div class="flex py-4 overflow-hidden gap-4 justify-center">
-					<div class="w-56 rounded-xl overflow-hidden">
+				<div
+					class="flex py-4 lg:pt-5 lg:pb-20 overflow-hidden gap-4 justify-center"
+				>
+					<div class="w-56 lg:w-[30%] rounded-xl overflow-hidden">
 						<img src="../img/banner1.webp" alt="" />
 					</div>
-					<div class="w-56 rounded-xl overflow-hidden">
+					<div class="w-56 lg:w-[30%] rounded-xl overflow-hidden">
 						<img src="../img/banner2.webp" alt="" />
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="mt-6">
-			<div class="container">
+		<section class="mt-6 lg:-mt-10 lg:flex">
+			<div class="container lg:pr-0">
 				<div
-					class="bg-biru h-auto rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+					class="bg-biru h-auto lg:h-48 rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] lg:flex lg:p-3"
 				>
 					<div class="flex justify-center pt-4">
 						<div class="w-56 rounded-xl overflow-hidden">
@@ -70,7 +74,7 @@
 							</h1>
 						</div>
 					</div>
-					<div class="container">
+					<div class="container self-end">
 						<div class="py-3 flex justify-center">
 							<button
 								class="bg-white w-10/12 h-8 rounded-full text-xs text-biru font-bold"
@@ -81,30 +85,30 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section>
-			<div class="container">
+			<div class="container lg:pl-0">
 				<div
-					class="bg-white h-auto rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+					class="bg-white h-auto lg:h-48 rounded-md shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
 				>
 					<div class="flex justify-center pt-4">
-						<h1 class="font-bold text-xl text-biru leading-normal text-center">
+						<h1
+							class="font-bold text-xl lg:text-3xl text-biru leading-normal text-center"
+						>
 							MIZUREQUEST!
 						</h1>
 					</div>
 					<div class="container">
 						<div class="py-1">
 							<h2
-								class="font-bold text-xs text-dark leading-normal text-center"
+								class="font-bold text-xs lg:text-lg text-dark leading-normal text-center"
 							>
 								Belanja dari Jepang jadi menyenangkan!
 							</h2>
 						</div>
 					</div>
-					<div class="container">
+					<div class="container lg:mt-6">
 						<div class="py-6 flex justify-center">
 							<button
-								class="bg-biru w-10/12 h-8 rounded-full text-xs text-white font-bold"
+								class="bg-biru w-10/12 h-8 rounded-full text-xs lg:text-lg self-end text-white font-bold"
 							>
 								Yuk Cobain Mizupoint
 							</button>
@@ -113,13 +117,16 @@
 				</div>
 			</div>
 		</section>
+		<section></section>
 
-		<section class="my-10">
+		<section class="my-10 lg:my-16 lg:px-20">
 			<div class="container">
-				<h1 class="font-bold text-xl text-dark mb-2">Kategori</h1>
-				<div class="grid grid-cols-5 grid-rows-2 grid-flow-row gap-1">
+				<h1 class="font-bold text-xl lg:text-2xl text-dark mb-2">Kategori</h1>
+				<div
+					class="grid grid-cols-5 grid-rows-2 lg:grid-cols-none lg:grid-rows-1 grid-flow-row lg:grid-flow-col gap-1 lg:gap-0"
+				>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
 					>
 						<div class="w-full h-4/6 overflow-hidden mt-1">
 							<img src="../img/scaled.png" alt="" />
@@ -129,32 +136,95 @@
 						</h1>
 					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 					<div
-						class="w-full h-28 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					></div>
+						class="w-full lg:w-[90%] h-28 lg:h-36 bg-white rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+					>
+						<div class="w-full h-4/6 overflow-hidden mt-1">
+							<img src="../img/scaled.png" alt="" />
+						</div>
+						<h1 class="text-center text-[10px] font-bold leading-none mt-1">
+							Figure Animeeeee
+						</h1>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -169,7 +239,7 @@
 					class="w-full h-auto flex justify-center gap-1 items-center p-5 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
 				>
 					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+						class="w-full h-72 lg:w-[30%] lg:h-1/2 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
 					>
 						<div class="w-full aspect-square overflow-hidden">
 							<img src="../img/aqua.webp" class="object-cover" alt="" />
@@ -220,7 +290,7 @@
 						</div>
 					</div>
 					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+						class="w-full h-72 lg:w-[30%] lg:h-1/2 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
 					>
 						<div class="w-full aspect-square overflow-hidden">
 							<img src="../img/eris.webp" class="object-cover" alt="" />
@@ -274,10 +344,10 @@
 			<div class="container">
 				<h1 class="font-bold text-xl text-dark mb-2">Newest Items</h1>
 				<div
-					class="w-full grid grid-cols-2 justify-center gap-2 items-center p-4 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+					class="w-full lg:h-auto grid grid-cols-2 lg:grid-flow-col lg:grid-cols-none justify-center gap-2 lg:gap-0 justify-items-center p-4 bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
 				>
 					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+						class="w-full lg:w-[80%] h-72 lg:h-auto overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
 					>
 						<div class="w-full aspect-square overflow-hidden">
 							<img src="../img/aqua.webp" class="object-cover" alt="" />
@@ -328,7 +398,7 @@
 						</div>
 					</div>
 					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+						class="w-full lg:w-[80%] h-72 lg:h-auto overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
 					>
 						<div class="w-full aspect-square overflow-hidden">
 							<img src="../img/aqua.webp" class="object-cover" alt="" />
@@ -379,7 +449,7 @@
 						</div>
 					</div>
 					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+						class="w-full lg:w-[80%] h-72 lg:h-auto overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
 					>
 						<div class="w-full aspect-square overflow-hidden">
 							<img src="../img/aqua.webp" class="object-cover" alt="" />
@@ -430,7 +500,7 @@
 						</div>
 					</div>
 					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+						class="w-full lg:w-[80%] h-72 lg:h-auto overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
 					>
 						<div class="w-full aspect-square overflow-hidden">
 							<img src="../img/aqua.webp" class="object-cover" alt="" />
@@ -457,207 +527,6 @@
 									IDR 2.350.000
 								</h2>
 							</div>
-							<div class="flex justify-start items-center gap-1">
-								<h2 class="text-biru font-bold text-[10px]">
-									<s>IDR 2.350.000</s>
-								</h2>
-								<label
-									for=""
-									class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-									>Save 1%</label
-								>
-							</div>
-							<div>
-								<h3 class="text-gray-700 text-[6px]">Realese Oktober 2023</h3>
-							</div>
-
-							<div class="flex justify-center mt-2">
-								<button
-									class="bg-green-500 text-[8px] mb-2 text-white rounded-sm font-medium p-1"
-								>
-									Tambahkan Ke keranjang
-								</button>
-							</div>
-						</div>
-					</div>
-					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					>
-						<div class="w-full aspect-square overflow-hidden">
-							<img src="../img/aqua.webp" class="object-cover" alt="" />
-						</div>
-						<div class="w-full flex justify-start items-center mx-2 mt-2 gap-1">
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Konosuba
-							</h2>
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Eris
-							</h2>
-						</div>
-						<div class="mx-2 my-1">
-							<div class="w-full">
-								<h1 class="font-bold text-[10px] leading-none text-dark">
-									PVC 1/7 Aqua - Sneaker Bunko 30th Anniversary Ver.
-									(Re-Release)
-								</h1>
-								<h2 class="text-biru font-bold text-[10px] pt-1">
-									IDR 2.350.000
-								</h2>
-							</div>
-							<div class="flex justify-start items-center gap-1">
-								<h2 class="text-biru font-bold text-[10px]">
-									<s>IDR 2.350.000</s>
-								</h2>
-								<label
-									for=""
-									class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-									>Save 1%</label
-								>
-							</div>
-							<div>
-								<h3 class="text-gray-700 text-[6px]">Realese Oktober 2023</h3>
-							</div>
-
-							<div class="flex justify-center mt-2">
-								<button
-									class="bg-green-500 text-[8px] mb-2 text-white rounded-sm font-medium p-1"
-								>
-									Tambahkan Ke keranjang
-								</button>
-							</div>
-						</div>
-					</div>
-					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					>
-						<div class="w-full aspect-square overflow-hidden">
-							<img src="../img/aqua.webp" class="object-cover" alt="" />
-						</div>
-						<div class="w-full flex justify-start items-center mx-2 mt-2 gap-1">
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Konosuba
-							</h2>
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Eris
-							</h2>
-						</div>
-						<div class="mx-2 my-1">
-							<div class="w-full">
-								<h1 class="font-bold text-[10px] leading-none text-dark">
-									PVC 1/7 Aqua - Sneaker Bunko 30th Anniversary Ver.
-									(Re-Release)
-								</h1>
-								<h2 class="text-biru font-bold text-[10px] pt-1">
-									IDR 2.350.000
-								</h2>
-							</div>
-							<div class="flex justify-start items-center gap-1">
-								<h2 class="text-biru font-bold text-[10px]">
-									<s>IDR 2.350.000</s>
-								</h2>
-								<label
-									for=""
-									class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-									>Save 1%</label
-								>
-							</div>
-							<div>
-								<h3 class="text-gray-700 text-[6px]">Realese Oktober 2023</h3>
-							</div>
-
-							<div class="flex justify-center mt-2">
-								<button
-									class="bg-green-500 text-[8px] mb-2 text-white rounded-sm font-medium p-1"
-								>
-									Tambahkan Ke keranjang
-								</button>
-							</div>
-						</div>
-					</div>
-					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					>
-						<div class="w-full aspect-square overflow-hidden">
-							<img src="../img/aqua.webp" class="object-cover" alt="" />
-						</div>
-						<div class="w-full flex justify-start items-center mx-2 mt-2 gap-1">
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Konosuba
-							</h2>
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Eris
-							</h2>
-						</div>
-						<div class="mx-2 my-1">
-							<div class="w-full">
-								<h1 class="font-bold text-[10px] leading-none text-dark">
-									PVC 1/7 Aqua - Sneaker Bunko 30th Anniversary Ver.
-									(Re-Release)
-								</h1>
-								<h2 class="text-biru font-bold text-[10px] pt-1">
-									IDR 2.350.000
-								</h2>
-							</div>
-							<div class="flex justify-start items-center gap-1">
-								<h2 class="text-biru font-bold text-[10px]">
-									<s>IDR 2.350.000</s>
-								</h2>
-								<label
-									for=""
-									class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-									>Save 1%</label
-								>
-							</div>
-							<div>
-								<h3 class="text-gray-700 text-[6px]">Realese Oktober 2023</h3>
-							</div>
-
-							<div class="flex justify-center mt-2">
-								<button
-									class="bg-green-500 text-[8px] mb-2 text-white rounded-sm font-medium p-1"
-								>
-									Tambahkan Ke keranjang
-								</button>
-							</div>
-						</div>
-					</div>
-					<div
-						class="w-full h-72 overflow-hidden rounded-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
-					>
-						<div class="w-full aspect-square overflow-hidden">
-							<img src="../img/eris.webp" class="object-cover" alt="" />
-						</div>
-						<div class="w-full flex justify-start items-center mx-2 mt-2 gap-1">
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Konosuba
-							</h2>
-							<h2
-								class="bg-gray-100 text-dark text-[6px] px-1 rounded-sm font-medium"
-							>
-								Eris
-							</h2>
-						</div>
-						<div class="mx-2 my-1">
-							<h1 class="font-bold text-[10px] leading-none text-dark">
-								PVC 1/7 Eris - Sneaker Bunko 30th Anniversary Ver. (Re-Release)
-							</h1>
-							<h2 class="text-biru font-bold text-[10px] pt-1">
-								IDR 2.350.000
-							</h2>
 							<div class="flex justify-start items-center gap-1">
 								<h2 class="text-biru font-bold text-[10px]">
 									<s>IDR 2.350.000</s>
